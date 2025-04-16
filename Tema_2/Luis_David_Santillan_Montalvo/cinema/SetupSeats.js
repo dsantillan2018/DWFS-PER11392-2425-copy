@@ -2,9 +2,8 @@
  * Class to set up the seats for the cinema
  */
 class setupSeats {
-    constructor(size, status) {
+    constructor(size) {
         this.size = size;
-        this.status = status;
     }
 
     /**
@@ -22,7 +21,6 @@ class setupSeats {
                 // New seat
                 row.push({
                     id: id++,
-                    //status: this.status
                     status: Math.random() >= 0.5// Status initial free
                 });
             }
